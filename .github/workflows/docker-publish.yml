@@ -34,7 +34,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          image: ${{ secrets.DDOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}
           platforms: linux/arm64
           push: true
-          tags: ${{ env.TAGS }}
+          #tags: ${{ env.TAGS }}
+          tags: diegogca/watchyourlan:latest
